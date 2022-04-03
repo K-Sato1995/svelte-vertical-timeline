@@ -28,7 +28,7 @@
 	}
 	.timeline-item::before {
 		content: '';
-		/* border: solid 1px red; */
+		border: solid 1px red;
 		flex: 1;
 		margin: 6px 16px;
 		/* padding: 6px 16px, */

@@ -20,8 +20,8 @@
 	.timeline-content {
 		margin: 0;
 		flex: 1;
-		/* border: solid 1px; */
-		padding: 6px 16px;
-		height: 150px;
+		border: solid 1px;
+		margin: 6px 16px;
+		/* height: 150px; */
 	}
 </style>
