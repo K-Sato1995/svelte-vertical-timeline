@@ -7,8 +7,19 @@
 	import TimelineContent from '$lib/components/TimelineContent.svelte';
 </script>
 
-<Timeline>
-	<TimelineItem position="left">
+<Timeline position="left">
+	<TimelineItem position="right">
+		<TimelineSeparator>
+			<TimelineDot />
+			<TimelineConnector />
+		</TimelineSeparator>
+		<TimelineContent>
+			<h2>Ruby development Inc</h2>
+			<p>This is a company</p>
+		</TimelineContent>
+	</TimelineItem>
+
+	<TimelineItem>
 		<TimelineSeparator>
 			<TimelineDot />
 			<TimelineConnector />
