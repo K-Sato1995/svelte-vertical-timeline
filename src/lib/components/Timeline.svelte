@@ -1,6 +1,6 @@
-<div class="timeline">
+<ul class="timeline">
 	<slot />
-</div>
+</ul>
 
 <style>
 	.timeline {
