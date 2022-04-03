@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { setContext } from 'svelte';
-	export let position: 'right' | 'left' = 'right';
+	import type { TimelinePosition, TimelineConfig } from '../types';
+	export let position: TimelinePosition = 'right';
 
-	setContext('TimelineConfig', { position });
+	setContext<TimelineConfig>('TimelineConfig', { rootPosition: position });
 </script>
 
 <ul class="timeline">
