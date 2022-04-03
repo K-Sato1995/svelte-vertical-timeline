@@ -1,10 +1,15 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
+	import type { TimelineConfig, TimelinePosition } from '../types';
 
-	const config = getContext('TimelineConfig');
+	const config = getContext<TimelineConfig>('TimelineConfig');
+	const parentPosition = getContext<TimelinePosition>('ParentPosition');
+
+	const itemPosition = parentPosition ? parentPosition : config.rootPosition;
 </script>
 
 <div class="timeline-content">
+	<h1>ParentPos: {itemPosition}</h1>
 	<slot />
 </div>
 

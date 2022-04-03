@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { getContext } from 'svelte';
-	import { setContext } from 'svelte';
-	import type { TimelinePosition, TimelineConfig } from '../types';
+	import { getContext, setContext } from 'svelte';
+	import type { TimelinePosition, ParentPosition, TimelineConfig } from '../types';
 
-	export let position: TimelinePosition | null;
+	export let position: ParentPosition | null;
 
 	const config = getContext<TimelineConfig>('TimelineConfig');
 	const itemPosition = position ? position : config.rootPosition;
@@ -11,6 +10,7 @@
 </script>
 
 <li class="timeline-item">
+	<h1>itemPos: {itemPosition}</h1>
 	<slot />
 </li>
 

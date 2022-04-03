@@ -8,7 +8,7 @@
 </script>
 
 <Timeline>
-	<TimelineItem>
+	<TimelineItem position="left">
 		<TimelineSeparator>
 			<TimelineDot />
 			<TimelineConnector />
@@ -19,7 +19,7 @@
 		</TimelineContent>
 	</TimelineItem>
 
-	<TimelineItem>
+	<TimelineItem position="right">
 		<TimelineSeparator>
 			<TimelineDot />
 			<TimelineConnector />
