@@ -8,8 +8,8 @@
 
 <style>
 	.timeline-dot {
-    background-color: #BDBDBD;
-    border: solid 2px #BDBDBD;
+		background-color: #bdbdbd;
+		border: solid 2px #bdbdbd;
 		display: flex;
 		align-self: baseline;
 		padding: 4px;
