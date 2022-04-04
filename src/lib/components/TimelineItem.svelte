@@ -29,7 +29,6 @@
 	}
 
 	.opposite-block {
-		border: solid 1px red;
 		flex: 1;
 		margin: 6px 16px;
 	}

@@ -7,7 +7,7 @@
 <style>
 	.timeline-connector {
 		width: 2px;
-		background-color: grey;
+		background-color: #bdbdbd;
 		flex-grow: 1;
 	}
 </style>

@@ -17,7 +17,6 @@
 	.timeline-opposite-content {
 		margin: 0;
 		flex: 1;
-		border: solid 1px;
 		margin-right: auto;
 		margin: 6px 16px;
 	}

@@ -17,7 +17,6 @@
 	.timeline-content {
 		margin: 0;
 		flex: 1;
-		border: solid 1px;
 		margin: 6px 16px;
 	}
 
