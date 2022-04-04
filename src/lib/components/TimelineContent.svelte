@@ -6,13 +6,9 @@
 	const parentPosition = getContext<TimelinePosition>('ParentPosition');
 
 	const itemPosition = parentPosition ? parentPosition : config.rootPosition;
-
-	const style = `
-    ${itemPosition === 'left' ? 'text-align: right;' : 'text-align: left;'}
-  `;
 </script>
 
-<div class="timeline-content" {style}>
+<div class={`timeline-content ${itemPosition}`}>
 	<slot />
 </div>
 
@@ -22,6 +18,13 @@
 		flex: 1;
 		border: solid 1px;
 		margin: 6px 16px;
-		/* height: 150px; */
+	}
+
+	.left {
+		text-align: right;
+	}
+
+	.right {
+		text-align: left;
 	}
 </style>

@@ -7,8 +7,8 @@
 	import TimelineContent from '$lib/components/TimelineContent.svelte';
 </script>
 
-<Timeline position="left">
-	<TimelineItem position="right">
+<Timeline position="alternate">
+	<TimelineItem>
 		<TimelineSeparator>
 			<TimelineDot />
 			<TimelineConnector />
@@ -30,7 +30,7 @@
 		</TimelineContent>
 	</TimelineItem>
 
-	<TimelineItem position="right">
+	<TimelineItem>
 		<TimelineSeparator>
 			<TimelineDot />
 			<TimelineConnector />
