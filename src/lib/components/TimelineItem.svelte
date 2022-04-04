@@ -3,13 +3,14 @@
 	import type { TimelinePosition, ParentPosition, TimelineConfig } from '../types';
 
 	export let position: ParentPosition | null;
+	export let style: string = null;
 
 	const config = getContext<TimelineConfig>('TimelineConfig');
 	const itemPosition = position ? position : config.rootPosition;
 	setContext<TimelinePosition>('ParentPosition', itemPosition);
 </script>
 
-<li class={`timeline-item ${itemPosition}`}>
+<li class={`timeline-item ${itemPosition}`} {style}>
 	{#if !$$slots['opposite-content']}
 		<div class="opposite-block" />
 	{:else}

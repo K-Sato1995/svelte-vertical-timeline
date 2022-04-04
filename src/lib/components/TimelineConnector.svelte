@@ -1,4 +1,8 @@
-<span class="timeline-connector" />
+<script lang="ts">
+	export let style: string = null;
+</script>
+
+<span class="timeline-connector" {style} />
 
 <style>
 	.timeline-connector {

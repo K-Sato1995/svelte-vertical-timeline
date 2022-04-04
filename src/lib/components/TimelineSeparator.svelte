@@ -1,4 +1,8 @@
-<div class="timeline-separator">
+<script lang="ts">
+	export let style: string = null;
+</script>
+
+<div class="timeline-separator" {style}>
 	<slot />
 </div>
 

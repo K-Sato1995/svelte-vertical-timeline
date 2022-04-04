@@ -2,12 +2,12 @@
 	import { setContext } from 'svelte';
 	import type { TimelinePosition, TimelineConfig } from '../types';
 	export let position: TimelinePosition = 'right';
+	export let style: string = null;
 
 	setContext<TimelineConfig>('TimelineConfig', { rootPosition: position });
 </script>
 
-<ul class="timeline">
-	<h1>{position}</h1>
+<ul class="timeline" {style}>
 	<slot />
 </ul>
 

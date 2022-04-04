@@ -8,7 +8,7 @@
 	import TimelineOppositeContent from '../lib/components/TimelineOppositeContent.svelte';
 </script>
 
-<Timeline position="alternate">
+<Timeline style={`border: solid 2px; padding: 100px;`} position="alternate">
 	<TimelineItem>
 		<TimelineOppositeContent slot="opposite-content">
 			<span>Oppsite content</span>

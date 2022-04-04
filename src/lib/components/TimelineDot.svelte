@@ -1,4 +1,8 @@
-<span class="timeline-dot">
+<script lang="ts">
+	export let style: string = null;
+</script>
+
+<span class="timeline-dot" {style}>
 	<slot />
 </span>
 
