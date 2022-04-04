@@ -5,7 +5,7 @@
 	--background-color: #1e1e1e;
 	--secondary-color: #6a7281;
 	--link-color: #0076df;
-	--border-color: #e5e7eb;
+	--border-color: #858d92;
 
 	font-size: 16px;
 	background-color: var(--background-color);
@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 600;
 	margin: 0.8rem 0;
 }
