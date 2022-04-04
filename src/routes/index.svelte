@@ -5,10 +5,15 @@
 	import TimelineDot from '$lib/components/TimelineDot.svelte';
 	import TimelineConnector from '$lib/components/TimelineConnector.svelte';
 	import TimelineContent from '$lib/components/TimelineContent.svelte';
+	import TimelineOppositeContent from '../lib/components/TimelineOppositeContent.svelte';
 </script>
 
 <Timeline position="alternate">
 	<TimelineItem>
+		<TimelineOppositeContent slot="opposite-content">
+			<span>Oppsite content</span>
+		</TimelineOppositeContent>
+
 		<TimelineSeparator>
 			<TimelineDot />
 			<TimelineConnector />
@@ -20,6 +25,10 @@
 	</TimelineItem>
 
 	<TimelineItem>
+		<TimelineOppositeContent slot="opposite-content">
+			<span>Oppsite content</span>
+		</TimelineOppositeContent>
+
 		<TimelineSeparator>
 			<TimelineDot />
 			<TimelineConnector />

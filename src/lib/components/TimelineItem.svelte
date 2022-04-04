@@ -10,22 +10,34 @@
 </script>
 
 <li class={`timeline-item ${itemPosition}`}>
+	{#if !$$slots['opposite-content']}
+		<div class="opposite-block" />
+	{:else}
+		<slot name="opposite-content" />
+	{/if}
 	<slot />
 </li>
 
 <style>
+	:global(.alternate:nth-of-type(even) > .timeline-content) {
+		text-align: right;
+	}
+
+	:global(.alternate:nth-of-type(odd) > .timeline-opposite-content) {
+		text-align: right;
+	}
+
+	.opposite-block {
+		border: solid 1px red;
+		flex: 1;
+		margin: 6px 16px;
+	}
+
 	.timeline-item {
 		list-style: none;
 		display: flex;
 		position: relative;
 		min-height: 70px;
-	}
-
-	.timeline-item::before {
-		content: '';
-		border: solid 1px red;
-		flex: 1;
-		margin: 6px 16px;
 	}
 
 	.left {
@@ -42,9 +54,5 @@
 
 	.alternate:nth-of-type(odd) {
 		flex-direction: row;
-	}
-
-	:global(.alternate:nth-of-type(even) > .timeline-content) {
-		text-align: right;
 	}
 </style>
