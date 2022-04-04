@@ -70,7 +70,6 @@
 <Timeline
 	position="alternate"
 	style={`
-  // border: solid var(--border-color) 1px;
   border-radius: 3%;
   padding: 1rem;
   `}
@@ -109,7 +108,6 @@
 		margin-top: 1rem;
 		color: #d1d3dd;
 		font-weight: lighter;
-		/* border: solid red 1px; */
-		padding: 1rem 0;
+		padding: 0.5rem 0;
 	}
 </style>

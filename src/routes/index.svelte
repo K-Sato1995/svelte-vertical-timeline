@@ -11,24 +11,25 @@
 	</div>
 </div>
 
+<div class="footer" />
+
 <style>
 	.header {
-		height: 50px;
+		height: 120px;
 		color: var(--main-color);
-		/* border-bottom: solid 1px var(--main-color); */
-		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.header__title {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 	.main {
-		/* border: solid 1px #fff; */
 		margin-top: 1rem;
 		max-width: 768px;
 		margin: 0 auto;
 	}
-	.example-container {
-		/* border: solid red 1px; */
-		/* border-radius: 10%; */
+	.footer {
+		height: 120px;
 	}
 </style>
