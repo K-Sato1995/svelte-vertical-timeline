@@ -6,6 +6,11 @@ Svelte components for creating a vertical timeline.
 
 Check out the [demo](https://svelte-vertical-timeline.vercel.app/).
 
+## Demo
+
+- [Demo Site](https://svelte-vertical-timeline.vercel.app/)
+- [Live Demo with svelte REPL](https://svelte.dev/repl/fe646b8ac9404f469a328365808d0c9d?version=3.46.6)
+
 ## Installation
 
 ```
@@ -160,6 +165,8 @@ The timeline can display the events on alternating sides.
 ## Opposite content
 
 The timeline can display content on opposite sides.
+
+__Please make sure to add `slot="opposite-content"` to the `<TimelineOppositeContent/>` component.__
 
 ![image](https://user-images.githubusercontent.com/32632542/161708142-7de1ad8d-5ccc-479c-aa8b-f5dd95eddd56.png)
 
