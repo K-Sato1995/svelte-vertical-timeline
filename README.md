@@ -35,7 +35,6 @@ npm install svelte-vertical-timeline
 		TimelineDot,
 		TimelineConnector,
 		TimelineContent,
-		TimelineOppositeContent
 	} from 'svelte-vertical-timeline';
 
 	const options = [{ title: 'Eat' }, { title: 'Sleep' }, { title: 'Code' }];
@@ -57,6 +56,87 @@ npm install svelte-vertical-timeline
 ```
 </p>
 </details>
+
+### Left positioned timeline
+
+![image](https://user-images.githubusercontent.com/32632542/161698883-4b22f3c9-42af-414d-a5f0-0a3141b410eb.png)
+
+
+<details><summary>CODE</summary>
+<p>
+
+```svelte
+<script>
+	import {
+		Timeline,
+		TimelineItem,
+		TimelineSeparator,
+		TimelineDot,
+		TimelineConnector,
+		TimelineContent,
+	} from 'svelte-vertical-timeline';
+
+	const options = [{ title: 'Eat' }, { title: 'Sleep' }, { title: 'Code' }];
+</script>
+
+<Timeline position="left">
+	{#each options as option}
+		<TimelineItem>
+			<TimelineSeparator>
+				<TimelineDot />
+				<TimelineConnector />
+			</TimelineSeparator>
+			<TimelineContent>
+				<h3>{option.title}</h3>
+			</TimelineContent>
+		</TimelineItem>
+	{/each}
+</Timeline>
+```
+</p>
+</details>
+
+### Alternating timeline
+
+![image](https://user-images.githubusercontent.com/32632542/161699086-507b75dd-c295-4a2e-9215-e46bf5d05477.png)
+
+<details><summary>CODE</summary>
+<p>
+
+```svelte
+<script>
+	import {
+		Timeline,
+		TimelineItem,
+		TimelineSeparator,
+		TimelineDot,
+		TimelineConnector,
+		TimelineContent,
+	} from 'svelte-vertical-timeline';
+
+	const options = [{ title: 'Eat' }, { title: 'Sleep' }, { title: 'Code' }];
+</script>
+
+<Timeline position="alternate">
+	{#each options as option}
+		<TimelineItem>
+			<TimelineSeparator>
+				<TimelineDot />
+				<TimelineConnector />
+			</TimelineSeparator>
+			<TimelineContent>
+				<h3>{option.title}</h3>
+			</TimelineContent>
+		</TimelineItem>
+	{/each}
+</Timeline>
+```
+</p>
+</details>
+
+### Opposite content
+
+### Customization
 
 ## API
 
