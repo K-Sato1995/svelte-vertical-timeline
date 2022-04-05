@@ -22,9 +22,6 @@ npm install svelte-vertical-timeline
 
 ![image](https://user-images.githubusercontent.com/32632542/161697936-01666c94-927a-4ad4-8d4b-7ce1026db6fb.png)
 
-<details><summary>CODE</summary>
-<p>
-
 ```svelte
 <script>
 	import {
@@ -54,8 +51,6 @@ npm install svelte-vertical-timeline
 </Timeline>
 ```
 
-</p>
-</details>
 
 ### Left positioned timeline
 
