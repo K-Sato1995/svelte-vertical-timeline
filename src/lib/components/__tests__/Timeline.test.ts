@@ -3,10 +3,15 @@ import '@testing-library/jest-dom';
 
 import { render, fireEvent } from '@testing-library/svelte';
 
-import Timeline from '../Timeline.svelte';
+import Timeline from './__testMocks__/Timeline.svelte';
 
-test('shows proper heading when rendered', () => {
-	render(Timeline);
-	console.log(screen);
-	// expect(getByText('Hello World!')).toBeInTheDocument();
+const options = {
+	position: 'left',
+	title: 'title',
+	oppositeContent: 'oppositeContent',
+	description: 'desc',
+}
+test('it renderes', () => {
+	const { getByText } = render(Timeline, { options });
+	expect(getByText('title')).toBeInTheDocument();
 });

@@ -2,7 +2,7 @@
 	import { getContext, setContext } from 'svelte';
 	import type { TimelinePosition, ParentPosition, TimelineConfig } from '../types';
 
-	export let position: ParentPosition | null;
+	export let position: ParentPosition | null = null;
 	export let style: string = null;
 
 	const config = getContext<TimelineConfig>('TimelineConfig');
