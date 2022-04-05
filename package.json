@@ -5,6 +5,8 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"repository": "K-Sato1995/svelte-vertical-timeline",
+	"author": "K-Sato1995",
 	"keywords": [
 		"timeline",
 		"vertical-timeline",
