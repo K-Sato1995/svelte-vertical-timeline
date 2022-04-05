@@ -8,8 +8,6 @@
 	import TimelineOppositeContent from '../../TimelineOppositeContent.svelte';
 
     export let options
-
-    console.log(options)
 </script>
 
 
