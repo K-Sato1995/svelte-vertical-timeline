@@ -8,10 +8,9 @@ const options = (position) => {
 		position: position,
 		title: 'title',
 		oppositeContent: 'oppositeContent',
-		description: 'desc',
-	}
-}
-
+		description: 'desc'
+	};
+};
 
 test('it renderes', () => {
 	const { getByText } = render(Timeline, { options: options('left') });
