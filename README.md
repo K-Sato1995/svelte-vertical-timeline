@@ -16,15 +16,14 @@ or
 npm install svelte-vertical-timeline
 ```
 
-## Usage
-
 ## Basic Timeline
 
 ### Example
 
 ![image](https://user-images.githubusercontent.com/32632542/161697936-01666c94-927a-4ad4-8d4b-7ce1026db6fb.png)
 
-### Code
+<details><summary>CODE</summary>
+<p>
 
 ```svelte
 <script>
@@ -54,6 +53,9 @@ npm install svelte-vertical-timeline
 	{/each}
 </Timeline>
 ```
+
+</p>
+</details>
 
 
 ## Left positioned timeline
@@ -282,16 +284,63 @@ npm install svelte-vertical-timeline
 
 ## API
 
-### Timeline
+## `<Timeline/>`
+ 
+### Props
 
-### TimelineItem
+|  Name  |  type  | isRequired   | Description   |
+| ---- | ---- | ---- | ---- |
+|  position  |  `right`, `left` or `alternate` |  x  |  The position where the TimelineContent should appear |
+|  style  |  string  |  x |  Custom style for this component  |
 
-### TimelineSeparator
 
-### TimelineDot
+## `<TimelineItem/>`
 
-### TimelineConnector
 
-### TimelineContent
+### Props
 
-### TimelineOppositeContent
+|  Name  |  type  | isRequired   | Description   |
+| ---- | ---- | ---- | ---- |
+|  position  |  `right` or `left` |  x  |The position where the timeline's item should appear |
+|  style  |  string  |  x |  Custom style for this component  |
+
+
+## `<TimelineSeparator/>`
+
+### Props
+
+|  Name  |  type  | isRequired   | Description   |
+| ---- | ---- | ---- | ---- |
+|  style  |  string  |  x |  Custom style for this component  |
+
+## `<TimelineDot/>`
+
+### Props
+
+|  Name  |  type  | isRequired   | Description   |
+| ---- | ---- | ---- | ---- |
+|  style  |  string  |  x |  Custom style for this component  |
+
+## `<TimelineConnector/>`
+
+### Props
+
+|  Name  |  type  | isRequired   | Description   |
+| ---- | ---- | ---- | ---- |
+|  style  |  string  |  x |  Custom style for this component  |
+
+## `<TimelineContent/>`
+
+### Props
+
+|  Name  |  type  | isRequired   | Description   |
+| ---- | ---- | ---- | ---- |
+|  style  |  string  |  x |  Custom style for this component  |
+
+## `<TimelineOppositeContent/>`
+
+### Props
+
+|  Name  |  type  | isRequired   | Description   |
+| ---- | ---- | ---- | ---- |
+|  style  |  string  |  x |  Custom style for this component  |
