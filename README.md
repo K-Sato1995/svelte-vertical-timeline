@@ -18,9 +18,13 @@ npm install svelte-vertical-timeline
 
 ## Usage
 
-### Basic Timeline
+## Basic Timeline
+
+### Example
 
 ![image](https://user-images.githubusercontent.com/32632542/161697936-01666c94-927a-4ad4-8d4b-7ce1026db6fb.png)
+
+### Code
 
 ```svelte
 <script>
@@ -52,7 +56,7 @@ npm install svelte-vertical-timeline
 ```
 
 
-### Left positioned timeline
+## Left positioned timeline
 
 ![image](https://user-images.githubusercontent.com/32632542/161698883-4b22f3c9-42af-414d-a5f0-0a3141b410eb.png)
 
@@ -91,7 +95,7 @@ npm install svelte-vertical-timeline
 </p>
 </details>
 
-### Alternating timeline
+## Alternating timeline
 
 ![image](https://user-images.githubusercontent.com/32632542/161699086-507b75dd-c295-4a2e-9215-e46bf5d05477.png)
 
@@ -130,7 +134,7 @@ npm install svelte-vertical-timeline
 </p>
 </details>
 
-### Opposite content
+## Opposite content
 ![image](https://user-images.githubusercontent.com/32632542/161708142-7de1ad8d-5ccc-479c-aa8b-f5dd95eddd56.png)
 
 <details><summary>CODE</summary>
@@ -177,7 +181,7 @@ npm install svelte-vertical-timeline
 </details>
 
 
-### Customization
+## Customization
 ![image](https://user-images.githubusercontent.com/32632542/161714247-19574e93-d9d1-4fef-bd39-e2271202d8e4.png)
 
 <details><summary>CODE</summary>
