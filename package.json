@@ -1,6 +1,16 @@
 {
 	"name": "svelte-vertical-timeline",
+	"license": "MIT",
 	"version": "0.0.1",
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [
+		"timeline",
+		"vertical-timeline",
+		"svelte-kit",
+		"svelte"
+	],
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
