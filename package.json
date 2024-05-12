@@ -73,5 +73,11 @@
 		"testEnvironment": "jsdom",
 		"preset": "ts-jest"
 	},
-	"type": "module"
+	"type": "module",
+	"svelte": "./index.js",
+	"exports": {
+		".": {
+			"svelte": "./index.js"
+		}
+	}
 }
