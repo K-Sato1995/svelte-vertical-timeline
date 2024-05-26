@@ -1,9 +1,12 @@
 /** @type {import('@playwright/test').PlaywrightTestConfig} */
 const config = {
 	webServer: {
-		command: 'npm run build && npm run preview:app',
-		port: 3000
-	}
+		command: 'yarn run build && yarn run preview:app',
+		port: 4173,
+		timeout: 120 * 1000,
+	},
+	testDir: 'tests',
+	testMatch: /(.+\.)?(test|spec)\.[jt]s/
 };
 
 export default config;
