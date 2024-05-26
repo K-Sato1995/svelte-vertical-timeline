@@ -1,0 +1,13 @@
+name: build-check
+on: push
+jobs:
+  test-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install deps
+        run: yarn
+      - name: Run unit tests
+        run: yarn run test:unit
+      - name: build
+        run: yarn build

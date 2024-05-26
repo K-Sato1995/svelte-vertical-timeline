@@ -78,9 +78,7 @@ A basic timeline showing list of events.
 </p>
 </details>
 
-
 ## Left positioned timeline
-
 
 The main content of the timeline can be positioned on the left side.
 
@@ -166,7 +164,7 @@ The timeline can display the events on alternating sides.
 
 The timeline can display content on opposite sides.
 
-__Please make sure to add `slot="opposite-content"` to the `<TimelineOppositeContent/>` component.__
+**Please make sure to add `slot="opposite-content"` to the `<TimelineOppositeContent/>` component.**
 
 ![image](https://user-images.githubusercontent.com/32632542/161708142-7de1ad8d-5ccc-479c-aa8b-f5dd95eddd56.png)
 
@@ -210,9 +208,9 @@ __Please make sure to add `slot="opposite-content"` to the `<TimelineOppositeCon
 	{/each}
 </Timeline>
 ```
+
 </p>
 </details>
-
 
 ## Customization
 
@@ -313,68 +311,66 @@ You can customize the timeline anyway you want. Check [here](https://github.com/
 	}
 </style>
 ```
+
 </p>
 </details>
 
 ## API
 
 ## `<Timeline/>`
- 
+
 ### Props
 
-|  Name  |  type  | isRequired   | Description   |
-| ---- | ---- | ---- | ---- |
-|  position  |  `right`, `left` or `alternate` |  x  |  The position where the TimelineContent should appear |
-|  style  |  string  |  x |  Custom style for this component  |
-
+| Name     | type                           | isRequired | Description                                          |
+| -------- | ------------------------------ | ---------- | ---------------------------------------------------- |
+| position | `right`, `left` or `alternate` | x          | The position where the TimelineContent should appear |
+| style    | string                         | x          | Custom style for this component                      |
 
 ## `<TimelineItem/>`
 
-
 ### Props
 
-|  Name  |  type  | isRequired   | Description   |
-| ---- | ---- | ---- | ---- |
-|  position  |  `right` or `left` |  x  |The position where the timeline's item should appear |
-|  style  |  string  |  x |  Custom style for this component  |
-
+| Name     | type              | isRequired | Description                                          |
+| -------- | ----------------- | ---------- | ---------------------------------------------------- |
+| position | `right` or `left` | x          | The position where the timeline's item should appear |
+| style    | string            | x          | Custom style for this component                      |
 
 ## `<TimelineSeparator/>`
 
 ### Props
 
-|  Name  |  type  | isRequired   | Description   |
-| ---- | ---- | ---- | ---- |
-|  style  |  string  |  x |  Custom style for this component  |
+| Name  | type   | isRequired | Description                     |
+| ----- | ------ | ---------- | ------------------------------- |
+| style | string | x          | Custom style for this component |
 
 ## `<TimelineDot/>`
 
 ### Props
 
-|  Name  |  type  | isRequired   | Description   |
-| ---- | ---- | ---- | ---- |
-|  style  |  string  |  x |  Custom style for this component  |
+| Name  | type   | isRequired | Description                     |
+| ----- | ------ | ---------- | ------------------------------- |
+| style | string | x          | Custom style for this component |
 
 ## `<TimelineConnector/>`
 
 ### Props
 
-|  Name  |  type  | isRequired   | Description   |
-| ---- | ---- | ---- | ---- |
-|  style  |  string  |  x |  Custom style for this component  |
+| Name  | type   | isRequired | Description                     |
+| ----- | ------ | ---------- | ------------------------------- |
+| style | string | x          | Custom style for this component |
 
 ## `<TimelineContent/>`
 
 ### Props
 
-|  Name  |  type  | isRequired   | Description   |
-| ---- | ---- | ---- | ---- |
-|  style  |  string  |  x |  Custom style for this component  |
+| Name  | type   | isRequired | Description                     |
+| ----- | ------ | ---------- | ------------------------------- |
+| style | string | x          | Custom style for this component |
 
 ## `<TimelineOppositeContent/>`
 
 ### Props
 
-|  Name  |  type  | isRequired   | Description   |
-| ---- | ---- | ---- | ---- |
-|  style  |  string  |  x |  Custom style for this component  |
+| Name  | type   | isRequired | Description                     |
+| ----- | ------ | ---------- | ------------------------------- |
+| style | string | x          | Custom style for this component |
