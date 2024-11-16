@@ -9,11 +9,11 @@ Check out the [demo](https://svelte-vertical-timeline.vercel.app/).
 ## Demo
 
 - [Demo Site](https://svelte-vertical-timeline.vercel.app/)
-- [Live Demo with svelte REPL](https://svelte.dev/repl/fe646b8ac9404f469a328365808d0c9d?version=3.46.6)
+- [Live Demo with svelte REPL](https://svelte.dev/playground/d3e8710a2efe495799d478be2f0c03fa?version=5.2.1)
 
 ## Installation
 
-### Svelte5
+### SvelteV5
 
 ```
 yarn add svelte-vertical-timeline
@@ -25,7 +25,7 @@ or
 npm install svelte-vertical-timeline
 ```
 
-### Svete4 or lower
+### SveteV4 or lower
 
 ```
 yarn add svelte-vertical-timeline@1.0.2
@@ -34,7 +34,7 @@ yarn add svelte-vertical-timeline@1.0.2
 or
 
 ```
-npm install svelte-vertical-timelin@1.0.2e
+npm install svelte-vertical-timelin@1.0.2
 ```
 
 ## Usage
