@@ -19,7 +19,9 @@
 		"build:app": "vite build",
 		"preview:app": "vite preview",
 		"prepublishOnly": "yarn run svelte-package",
-		"test": "playwright test",
+		"test": "vitest run",
+		"test:ui": "vitest --ui",
+		"test:watch": "vitest",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
@@ -30,19 +32,20 @@
 		"svelte": "^4.2.16"
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.48.2",
 		"@sveltejs/adapter-vercel": "^5.4.7",
 		"@sveltejs/kit": "^2.8.1",
 		"@sveltejs/package": "^2.3.7",
-		"@sveltejs/vite-plugin-svelte": "^4.0.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.1",
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.4",
+		"@types/node": "^22.9.0",
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^7.0.0",
+		"@vitest/ui": "^2.1.5",
 		"eslint": "^8.33.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-svelte": "^2.46.0",
-		"jsdom": "^24.0.0",
+		"jsdom": "^25.0.1",
 		"prettier": "^3.1.0",
 		"prettier-plugin-svelte": "^3.2.8",
 		"svelte": "^5.2.0",
@@ -51,7 +54,7 @@
 		"tslib": "^2.5.0",
 		"typescript": "~5.6.3",
 		"vite": "^5.4.11",
-		"vitest": "^1.6.0"
+		"vitest": "^2.1.5"
 	},
 	"type": "module",
 	"exports": {
