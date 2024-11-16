@@ -13,6 +13,8 @@ Check out the [demo](https://svelte-vertical-timeline.vercel.app/).
 
 ## Installation
 
+### Svelte5
+
 ```
 yarn add svelte-vertical-timeline
 ```
@@ -21,6 +23,18 @@ or
 
 ```
 npm install svelte-vertical-timeline
+```
+
+### Svete4 or lower
+
+```
+yarn add svelte-vertical-timeline@1.0.2
+```
+
+or
+
+```
+npm install svelte-vertical-timelin@1.0.2e
 ```
 
 ## Usage
