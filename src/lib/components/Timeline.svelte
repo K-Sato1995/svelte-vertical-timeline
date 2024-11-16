@@ -1,14 +1,19 @@
 <script lang="ts">
 	import { setContext } from 'svelte';
 	import type { TimelinePosition, TimelineConfig } from '../types';
-	export let position: TimelinePosition = 'right';
-	export let style: string = null;
+	interface Props {
+		position?: TimelinePosition;
+		style?: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { position = 'right', style = null, children }: Props = $props();
 
 	setContext<TimelineConfig>('TimelineConfig', { rootPosition: position });
 </script>
 
 <ul class="timeline" {style}>
-	<slot />
+	{@render children?.()}
 </ul>
 
 <style>

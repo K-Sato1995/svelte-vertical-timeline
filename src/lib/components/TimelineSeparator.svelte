@@ -1,9 +1,14 @@
 <script lang="ts">
-	export let style: string = null;
+	interface Props {
+		style?: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { style = null, children }: Props = $props();
 </script>
 
 <div class="timeline-separator" {style}>
-	<slot />
+	{@render children?.()}
 </div>
 
 <style>

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Timeline from '../../Timeline.svelte';
 	import TimelineItem from '../../TimelineItem.svelte';
 	import TimelineSeparator from '../../TimelineSeparator.svelte';
@@ -7,12 +7,13 @@
 	import TimelineContent from '../../TimelineContent.svelte';
 	import TimelineOppositeContent from '../../TimelineOppositeContent.svelte';
 
-	export let options;
+	let { options } = $props();
 </script>
 
 <Timeline position={options.position}>
 	<TimelineItem>
-		<TimelineOppositeContent slot="opposite-content">
+		<!-- @migration-task: migrate this slot by hand, `opposite-content` is an invalid identifier -->
+	<TimelineOppositeContent slot="opposite-content">
 			<p class="oposite-content-title">{options.oppositeContent}</p>
 		</TimelineOppositeContent>
 
