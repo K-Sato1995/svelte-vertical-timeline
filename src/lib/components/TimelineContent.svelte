@@ -1,7 +1,12 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
 	import type { TimelineConfig, TimelinePosition } from '../types';
-	export let style: string = null;
+	interface Props {
+		style?: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { style = null, children }: Props = $props();
 
 	const config = getContext<TimelineConfig>('TimelineConfig');
 	const parentPosition = getContext<TimelinePosition>('ParentPosition');
@@ -10,7 +15,7 @@
 </script>
 
 <div class={`timeline-content ${itemPosition}`} {style}>
-	<slot />
+	{@render children?.()}
 </div>
 
 <style>

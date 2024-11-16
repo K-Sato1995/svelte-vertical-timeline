@@ -76,7 +76,8 @@
 >
 	{#each items as item}
 		<TimelineItem>
-			<TimelineOppositeContent slot="opposite-content">
+			<!-- @migration-task: migrate this slot by hand, `opposite-content` is an invalid identifier -->
+	<TimelineOppositeContent slot="opposite-content">
 				<p class="oposite-content-title">{item.year}</p>
 			</TimelineOppositeContent>
 

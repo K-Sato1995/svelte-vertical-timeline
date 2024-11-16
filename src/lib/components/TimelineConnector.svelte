@@ -1,8 +1,12 @@
 <script lang="ts">
-	export let style: string = null;
+	interface Props {
+		style?: string;
+	}
+
+	let { style = null }: Props = $props();
 </script>
 
-<span class="timeline-connector" {style} />
+<span class="timeline-connector" {style}></span>
 
 <style>
 	.timeline-connector {

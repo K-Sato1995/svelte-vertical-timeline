@@ -8,6 +8,6 @@ jobs:
       - name: Install deps
         run: yarn
       - name: Run unit tests
-        run: yarn run test:unit
+        run: yarn run test
       - name: build
         run: yarn build
