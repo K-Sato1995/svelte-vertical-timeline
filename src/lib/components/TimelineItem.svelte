@@ -11,26 +11,34 @@
 	setContext<TimelinePosition>('ParentPosition', itemPosition);
 </script>
 
-<li class={`timeline-item ${itemPosition}`} {style}>
-	{#if !$$slots['opposite-content']}
-		<div class="opposite-block" />
-	{:else}
-		<slot name="opposite-content" />
-	{/if}
-	<slot />
-</li>
+<!--<div class={`timeline-item ${itemPosition}`} {style}>-->
+{#if !$$slots['opposite-content']}
+	<div class="timeline-opposite-content" />
+{:else}
+	<slot name="opposite-content" />
+{/if}
+<slot />
+
+<!--</div>-->
 
 <style>
-	:global(.alternate:nth-of-type(even) > .timeline-content) {
+	/*:global(.timeline-content:nth-of-type(even)) {
+		grid-column-start: 1;
 		text-align: right;
 	}
+	:global(.alternate:nth-of-type(odd) > .timeline-content) {
+		grid-column-start: 3;
+	}
 
+	:global(.alternate:nth-of-type(even) > .timeline-opposite-content) {
+		grid-column-start: 1;
+	}
 	:global(.alternate:nth-of-type(odd) > .timeline-opposite-content) {
+		grid-column-start: 3;
 		text-align: right;
-	}
+	}*/
 
-	.opposite-block {
-		flex: 1;
+	.timeline-opposite-content {
 		margin: 6px 16px;
 	}
 
@@ -39,6 +47,7 @@
 		display: flex;
 		position: relative;
 		min-height: 70px;
+		width: max-content;
 	}
 
 	.left {
@@ -50,10 +59,8 @@
 	}
 
 	.alternate:nth-of-type(even) {
-		flex-direction: row-reverse;
 	}
 
 	.alternate:nth-of-type(odd) {
-		flex-direction: row;
 	}
 </style>
