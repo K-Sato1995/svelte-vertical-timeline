@@ -2596,9 +2596,9 @@ supports-color@^7.1.0:
     has-flag "^4.0.0"
 
 svelte-check@^4.0.7:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/svelte-check/-/svelte-check-4.0.8.tgz#50706b6b82136a31c7c995950404f897468900a1"
-  integrity sha512-nYxbPa0GJySVLhrplvpdGGdwst/7r/H9N991PVYk3BtSIuWBw5ihItHCDJu7hE1S0bPSRJ6IJ2yTCQeDUk0ZDg==
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/svelte-check/-/svelte-check-4.1.1.tgz#4d6a97651bdcff84ad10521d0394ce094dee187a"
+  integrity sha512-NfaX+6Qtc8W/CyVGS/F7/XdiSSyXz+WGYA9ZWV3z8tso14V2vzjfXviKaTFEzB7g8TqfgO2FOzP6XT4ApSTUTw==
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.25"
     chokidar "^4.0.1"
