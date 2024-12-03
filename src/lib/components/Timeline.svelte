@@ -20,6 +20,7 @@
 <style>
 	.timeline {
 		display: grid;
+		grid-auto-rows: minmax(70px, auto);
 		grid-auto-flow: row dense;
 		padding: 6px 16px;
 		flex-grow: 1;
