@@ -21,16 +21,33 @@
 <style>
 	.timeline-opposite-content {
 		margin: 0;
-		flex: 1;
 		margin-right: auto;
 		margin: 6px 16px;
+		width: fit-content;
+	}
+
+	.alternate:nth-child(odd of .timeline-opposite-content) {
+		grid-column-start: 3;
+		justify-self: start;
+	}
+	.alternate:nth-child(even of .timeline-opposite-content) {
+		grid-column-start: 1;
+		justify-self: end;
+		text-align: right;
+	}
+
+	.alterate:nth-child(10n + 7) {
+		border: 1px solid red;
 	}
 
 	.left {
+		grid-column-start: 3;
+		justify-self: start;
 		text-align: left;
 	}
 
 	.right {
+		justify-self: end;
 		text-align: right;
 	}
 </style>

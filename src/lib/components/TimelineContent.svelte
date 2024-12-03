@@ -21,15 +21,28 @@
 <style>
 	.timeline-content {
 		margin: 0;
-		flex: 1;
 		margin: 6px 16px;
+		width: fit-content;
+	}
+
+	.alternate:nth-child(odd of .timeline-content) {
+		grid-column-start: 1;
+		justify-self: end;
+		text-align: right;
+	}
+	.alternate:nth-child(even of .timeline-content) {
+		grid-column-start: 3;
+		justify-self: start;
 	}
 
 	.left {
+		grid-column-start: 1;
+		justify-self: end;
 		text-align: right;
 	}
 
 	.right {
+		justify-self: start;
 		text-align: left;
 	}
 </style>
