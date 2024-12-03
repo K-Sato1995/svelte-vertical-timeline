@@ -65,34 +65,53 @@
 			color: colors.forth
 		}
 	];
+
+	let centerInput = true;
+	let positionInput = 'alternate';
+	$: console.log('pos:', positionInput);
+	$: console.log('centered:', centerInput);
 </script>
 
-<Timeline
-	position="alternate"
-	center="true"
-	style={`
+<!-- Demo inputs -->
+<form class="example-form no-clear">
+	<label for="center-input">Centered: </label>
+	<input type="checkbox" id="center-input" name="Centered:" bind:checked={centerInput} />
+	<label for="position-input">Position: </label>
+	<select id="position-input" bind:value={positionInput}>
+		<option value="right">Right</option>
+		<option value="left">Left</option>
+		<option value="alternate">Alternate</option>
+	</select>
+</form>
+{#key centerInput + positionInput}
+	<!-- Timeline -->
+	<Timeline
+		position={positionInput}
+		center={centerInput}
+		style={`
   border-radius: 3%;
   padding: 1rem;
   `}
->
-	{#each items as item}
-		<TimelineItem>
-			<!-- @migration-task: migrate this slot by hand, `opposite-content` is an invalid identifier -->
-			<TimelineOppositeContent slot="opposite-content">
-				<p class="oposite-content-title">{item.year}</p>
-			</TimelineOppositeContent>
+	>
+		{#each items as item}
+			<TimelineItem>
+				<!-- @migration-task: migrate this slot by hand, `opposite-content` is an invalid identifier -->
+				<TimelineOppositeContent slot="opposite-content">
+					<p class="oposite-content-title">{item.year}</p>
+				</TimelineOppositeContent>
 
-			<TimelineSeparator>
-				<TimelineDot style={`background-color: ${item.color}; border-color: #fff;`} />
-				<TimelineConnector />
-			</TimelineSeparator>
-			<TimelineContent>
-				<h3 class="content-title">{item.title}</h3>
-				<p class="content-description">{item.description}</p>
-			</TimelineContent>
-		</TimelineItem>
-	{/each}
-</Timeline>
+				<TimelineSeparator>
+					<TimelineDot style={`background-color: ${item.color}; border-color: #fff;`} />
+					<TimelineConnector />
+				</TimelineSeparator>
+				<TimelineContent>
+					<h3 class="content-title">{item.title}</h3>
+					<p class="content-description">{item.description}</p>
+				</TimelineContent>
+			</TimelineItem>
+		{/each}
+	</Timeline>
+{/key}
 
 <style>
 	.oposite-content-title {
@@ -111,5 +130,12 @@
 		color: #d1d3dd;
 		font-weight: lighter;
 		padding: 0.5rem 0;
+	}
+
+	.example-form {
+		color: var(--main-color);
+	}
+	.example-form > label {
+		margin-left: 1rem;
 	}
 </style>
