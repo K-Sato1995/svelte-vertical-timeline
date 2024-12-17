@@ -2618,9 +2618,9 @@ svelte-eslint-parser@^0.43.0:
     postcss-scss "^4.0.9"
 
 svelte2tsx@^0.7.24:
-  version "0.7.25"
-  resolved "https://registry.yarnpkg.com/svelte2tsx/-/svelte2tsx-0.7.25.tgz#3be1445bb3b396499c54c9581a20925ae9d90e23"
-  integrity sha512-P47YhXv8TRNv9IFJOjKQmXsYErZkJavbixazpSTyaGqKBGm9kRZRGcr3HBHNrYkCikzISQlh55j24yS23MdTPA==
+  version "0.7.31"
+  resolved "https://registry.yarnpkg.com/svelte2tsx/-/svelte2tsx-0.7.31.tgz#28c76b15f97c3c48da8d4cc1ab979372b9d25100"
+  integrity sha512-exrN1o9mdCLAA7hTCudz731FIxomH/0SN9ZIX+WrY/XnlLuno/NNC1PF6JXPZVqp/4sMMDKteqyKoG44hliljQ==
   dependencies:
     dedent-js "^1.0.1"
     pascal-case "^3.1.1"
